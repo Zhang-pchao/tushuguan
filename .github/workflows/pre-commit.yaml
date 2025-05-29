@@ -1,0 +1,15 @@
+name: Pre-commit
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  merge_group:
+jobs:
+  pre_commit:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run pre-commit
+        uses: njzjz/pre-commit-action@master

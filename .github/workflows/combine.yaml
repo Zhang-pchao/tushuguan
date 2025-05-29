@@ -1,0 +1,26 @@
+name: Combine BiBTeX
+on:
+  push:
+    branches:
+      - master
+jobs:
+  combine:
+    runs-on: ubuntu-latest
+    environment:
+      name: bibtex
+      url: ${{ steps.upload-artifact.outputs.artifact-url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./
+        with:
+          output: ../dist/combined.bib
+      - run: mv ../dist .
+      - name: Archive combine BiBTeX
+        uses: actions/upload-artifact@v4
+        id: upload-artifact
+        with:
+          name: dist-combined-bib
+          path: |
+            dist/combined.bib
+      - name: Output artifact URL
+        run: echo 'Artifact URL is ${{ steps.upload-artifact.outputs.artifact-url }}'
