@@ -1,0 +1,40 @@
+@article{Martinez_JComputChem_2009_v30_p2157,
+  title        = {
+    {PACKMOL: a package for building initial configurations for molecular
+    dynamics simulations}
+  },
+  author       = {L. Mart{\'\i}nez and R. Andrade and E. G. Birgin and J. M. Mart{\'\i}nez},
+  year         = 2009,
+  journal      = {J. Comput. Chem.},
+  volume       = 30,
+  number       = 13,
+  pages        = {2157--64},
+  doi          = {10.1002/jcc.21224},
+  abstract     = {
+    Adequate initial configurations for molecular dynamics simulations consist
+    of arrangements of molecules distributed in space in such a way to
+    approximately represent the system's overall structure. In order that the
+    simulations are not disrupted by large van der Waals repulsive
+    interactions, atoms from different molecules must keep safe pairwise
+    distances. Obtaining such a molecular arrangement can be considered a
+    packing problem: Each type molecule must satisfy spatial constraints
+    related to the geometry of the system, and the distance between atoms of
+    different molecules must be greater than some specified tolerance. We have
+    developed a code able to pack millions of atoms, grouped in arbitrarily
+    complex molecules, inside a variety of three-dimensional regions. The
+    regions may be intersections of spheres, ellipses, cylinders, planes, or
+    boxes. The user must provide only the structure of one molecule of each
+    type and the geometrical constraints that each type of molecule must
+    satisfy. Building complex mixtures, interfaces, solvating biomolecules in
+    water, other solvents, or mixtures of solvents, is straightforward. In
+    addition, different atoms belonging to the same molecule may also be
+    restricted to different spatial regions, in such a way that more ordered
+    molecular arrangements can be built, as micelles, lipid double-layers, etc.
+    The packing time for state-of-the-art molecular dynamics systems varies
+    from a few seconds to a few minutes in a personal computer. The input files
+    are simple and currently compatible with PDB, Tinker, Molden, or Moldy
+    coordinate files. The package is distributed as free software and can be
+    downloaded from
+    http://www.ime.unicamp.br/{\textasciitilde}martinez/packmol/.
+  },
+}
