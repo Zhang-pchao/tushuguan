@@ -1,0 +1,46 @@
+@article{Wang_ComputPhysCommun_2018_v228_p178,
+  title        = {
+    {DeePMD-kit: A deep learning package for many-body potential energy
+    representation and molecular dynamics}
+  },
+  author       = {Han Wang and Linfeng Zhang and Jiequn Han and Weinan E},
+  year         = 2018,
+  journal      = {Comput. Phys. Commun.},
+  volume       = 228,
+  pages        = {178--184},
+  doi          = {10.1016/j.cpc.2018.03.016},
+  abstract     = {
+    Abstract Recent developments in many-body potential energy representation
+    via deep learning have brought new hopes to addressing the
+    accuracy-versus-efficiency dilemma in molecular simulations. Here we
+    describe DeePMD-kit, a package written in Python/C++ that has been designed
+    to minimize the effort required to build deep learning based representation
+    of potential energy and force field and to perform molecular dynamics.
+    Potential applications of DeePMD-kit span from finite molecules to extended
+    systems and from metallic systems to chemically bonded systems. DeePMD-kit
+    is interfaced with TensorFlow, one of the most popular deep learning
+    frameworks, making the training process highly automatic and efficient. On
+    the other end, DeePMD-kit is interfaced with high-performance classical
+    molecular dynamics and quantum (path-integral) molecular dynamics packages,
+    i.e.,{~}LAMMPS and the i-PI, respectively. Thus, upon training, the
+    potential energy and force field models can be used to perform efficient
+    molecular simulations for different purposes. As an example of the many
+    potential applications of the package, we use DeePMD-kit to learn the
+    interatomic potential energy and forces of a water model using data
+    obtained from density functional theory. We demonstrate that the resulted
+    molecular dynamics model reproduces accurately the structural information
+    contained in the original model. Program summary Program Title: DeePMD-kit
+    Program Files doi: http://dx.doi.org/10.17632/hvfh9yvncf.1 Licensing
+    provisions: LGPL Programming language: Python/C++ Nature of problem:
+    Modeling the many- body atomic interactions by deep neural network models.
+    Running molecular dynamics simulations with the models. Solution method:
+    The Deep Potential for Molecular Dynamics (DeePMD) method is implemented
+    based on the deep learning framework TensorFlow. Supports for using a
+    DeePMD model in LAMMPS and i-PI, for classical and quantum (path integral)
+    molecular dynamics are provided. Additional comments including Restrictions
+    and Unusual features: The code defines a data protocol such that the
+    energy, force, and virial calculated by different third-party molecular
+    simulation packages can be easily processed and used as model training
+    data.
+  },
+}
