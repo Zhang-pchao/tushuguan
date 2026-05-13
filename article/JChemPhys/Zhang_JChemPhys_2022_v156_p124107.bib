@@ -1,0 +1,39 @@
+@article{Zhang_JChemPhys_2022_v156_p124107,
+  title        = {{A deep potential model with long-range electrostatic interactions}},
+  author       = {
+    Linfeng Zhang and Han Wang and Maria Carolina Muniz and Athanassios Z.
+    Panagiotopoulos and Roberto Car and Weinan E
+  },
+  year         = 2022,
+  journal      = {J. Chem. Phys.},
+  volume       = 156,
+  number       = 12,
+  pages        = 124107,
+  doi          = {10.1063/5.0083669},
+  abstract     = {
+    Machine learning models for the potential energy of multi-atomic systems,
+    such as the deep potential (DP) model, make molecular simulations with the
+    accuracy of quantum mechanical density functional theory possible at a cost
+    only moderately higher than that of empirical force fields. However, the
+    majority of these models lack explicit long-range interactions and fail to
+    describe properties that derive from the Coulombic tail of the forces. To
+    overcome this limitation, we extend the DP model by approximating the
+    long-range electrostatic interaction between ions (nuclei + core electrons)
+    and valence electrons with that of distributions of spherical Gaussian
+    charges located at ionic and electronic sites. The latter are rigorously
+    defined in terms of the centers of the maximally localized Wannier
+    distributions, whose dependence on the local atomic environment is modeled
+    accurately by a deep neural network. In the DP long-range (DPLR) model, the
+    electrostatic energy of the Gaussian charge system is added to short-range
+    interactions that are represented as in the standard DP model. The
+    resulting potential energy surface is smooth and possesses analytical
+    forces and virial. Missing effects in the standard DP scheme are recovered,
+    improving on accuracy and predictive power. By including long-range
+    electrostatics, DPLR correctly extrapolates to large systems the potential
+    energy surface learned from quantum mechanical calculations on smaller
+    systems. We illustrate the approach with three examples: the potential
+    energy profile of the water dimer, the free energy of interaction of a
+    water molecule with a liquid water slab, and the phonon dispersion curves
+    of the NaCl crystal.
+  },
+}
