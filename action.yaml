@@ -14,5 +14,5 @@ runs:
       run: mkdir -p $(dirname ${{ inputs.output }})
       shell: bash
     - name: Combine BiBTeX
-      run: find ${{ github.action_path }} -name "*.bib" -type f -print0 | xargs -0 -n 1 -P ${{ steps.cpu-cores.outputs.count }} cat > ${{ inputs.output }}
+      run: find ${{ github.action_path }} -name "*.bib" -type f -print0 | sort -z | xargs -0 cat > ${{ inputs.output }}
       shell: bash
