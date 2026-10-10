@@ -1,0 +1,57 @@
+@article{Kapil_ComputPhysCommun_2019_v236_p214,
+  title        = {{i-PI 2.0: A Universal Force Engine for Advanced Molecular Simulations}},
+  author       = {
+    Venkat Kapil and Mariana Rossi and Ondrej Marsalek and Riccardo Petraglia
+    and Yair Litman and Thomas Spura and Bingqing Cheng and Alice Cuzzocrea and
+    Robert H. Mei{\ss}ner and David M. Wilkins and Benjamin A. Helfrecht and
+    Przemys{\l}aw Juda and S{\'e}bastien P. Bienvenue and Wei Fang and Jan
+    Kessler and Igor Poltavsky and Steven Vandenbrande and Jelle Wieme and
+    Clemence Corminboeuf and Thomas D. K{\"u}hne and David E. Manolopoulos and
+    Thomas E. Markland and Jeremy O. Richardson and Alexandre Tkatchenko and
+    Gareth A. Tribello and Veronique {Van Speybroeck} and Michele Ceriotti
+  },
+  year         = 2019,
+  journal      = {Comput. Phys. Commun.},
+  volume       = 236,
+  pages        = {214--223},
+  doi          = {10.1016/j.cpc.2018.09.020},
+  abstract     = {
+    Abstract Progress in the atomic-scale modeling of matter over the past
+    decade has been tremendous. This progress has been brought about by
+    improvements in methods for evaluating interatomic forces that work by
+    either solving the electronic structure problem explicitly, or by computing
+    accurate approximations of the solution and by the development of
+    techniques that use the Born{\textendash}Oppenheimer (BO) forces to move
+    the atoms on the BO potential energy surface. As a consequence of these
+    developments it is now possible to identify stable or metastable states, to
+    sample configurations consistent with the appropriate thermodynamic
+    ensemble, and to estimate the kinetics of reactions and phase transitions.
+    All too often, however, progress is slowed down by the bottleneck
+    associated with implementing new optimization algorithms and/or sampling
+    techniques into the many existing electronic-structure and
+    empirical-potential codes. To address this problem, we are thus releasing a
+    new version of the i-PI software. This piece of software is an easily
+    extensible framework for implementing advanced atomistic simulation
+    techniques using interatomic potentials and forces calculated by an
+    external driver code. While the original version of the code (Ceriotti
+    et{~}al., 2014) was developed with a focus on path integral molecular
+    dynamics techniques, this second release of i-PI not only includes several
+    new advanced path integral methods, but also offers other classes of
+    algorithms. In other words, i-PI is moving towards becoming a universal
+    force engine that is both modular and tightly coupled to the driver codes
+    that evaluate the potential energy surface and its derivatives. Program
+    summary Program Title: i-PI Program Files doi:
+    http://dx.doi.org/10.17632/x792grbm9g.1 Licensing provisions: GPLv3, MIT
+    Programming language: Python External routines/libraries: NumPy Nature of
+    problem: Lowering the implementation barrier to bring state- of-the-art
+    sampling and atomistic modeling techniques to ab initio and empirical
+    potentials programs. Solution method: Advanced sampling methods, including
+    path-integral molecular dynamics techniques, are implemented in a Python
+    interface. Any electronic structure code can be patched to receive the
+    atomic coordinates from the Python interface, and to return the forces and
+    energy that are used to integrate the equations of motion, optimize atomic
+    geometries, etc. Restrictions: This code does not compute interatomic
+    potentials, although the distribution includes sample driver codes that can
+    be used to test different techniques using a few simple model force fields.
+  },
+}
