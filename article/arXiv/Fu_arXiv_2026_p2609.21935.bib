@@ -1,0 +1,30 @@
+@article{Fu_arXiv_2026_p2609.21935,
+  title        = {
+    {fix uvt and fix pimd/uvt: A Unified LAMMPS Framework for Constant-
+    Potential Constant-Temperature Molecular Dynamics}
+  },
+  author       = {Li Fu and Yifan Li and Shenzhen Xu},
+  year         = 2026,
+  journal      = {arXiv},
+  pages        = {2609.21935},
+  doi          = {10.48550/arXiv.2609.21935},
+  abstract     = {
+    Accurate simulations of electrochemical interfaces require the simultaneous
+    treatment of constant-potential conditions, nuclear quantum effects, and
+    sufficient configurational sampling. Integrating these capabilities within
+    a general and efficient molecular dynamics (MD) framework remains
+    challenging. In this work, we implement fix uvt and fix pimd/uvt in LAMMPS
+    for constant-potential classical MD and path integral molecular dynamics
+    (PIMD), respectively. We organize the class hierarchy to reuse LAMMPS's
+    existing Nos{\'e}--Hoover chain thermostat routines and share nuclear
+    propagation routines across PIMD integrators. A common interface connects
+    these integrators to models that provide the electron-number derivative of
+    the potential energy. We present three examples with accompanying input
+    commands to guide users through constant-potential classical MD,
+    thermostatted PIMD, and constant-potential PIMD, covering analytical
+    models, liquid water, and electrochemical interfaces described by machine
+    learning potentials. This work provides practical tools and guidance for
+    large-scale constant-potential simulations incorporating nuclear quantum
+    effects.
+  },
+}
