@@ -1,0 +1,43 @@
+@article{Chen_JChemTheoryComput_2026_v22_p10928,
+  title        = {
+    {Distilling First-Principles Accuracy into Compact Machine Learning
+    Potentials for Condensed-Phase Chemistry}
+  },
+  author       = {Sijia Chen and Niamh O'Neill and Benjamin X. Shi and Venkat Kapil},
+  year         = 2026,
+  journal      = {J. Chem. Theory Comput.},
+  volume       = 22,
+  number       = 20,
+  pages        = {10928--10942},
+  doi          = {10.1021/acs.jctc.6c01131},
+  abstract     = {
+    Accurate machine learning interatomic potentials (MLIPs) have made
+    first-principles-quality potential energy surfaces increasingly accessible
+    for condensed-phase chemistry, but their inference cost can still limit the
+    sampling needed to compute experimentally relevant observables. In this
+    work, we use knowledge distillation to construct compact {''}student{''}
+    models that retain the accuracy of much larger {''}teacher{''} models
+    obtained through either finetuning of foundation models or
+    {\ensuremath{\Delta}}-learning. The resulting students reduce production
+    simulation cost by approximately an order of magnitude, making
+    high-accuracy sampling practical for challenging condensed-phase problems.
+    We demonstrate this across three problems of increasing sampling
+    complexity: finite-temperature NPT simulations of ice Ih, classical and
+    path-integral simulations of liquid water over 240-370 K, and path-integral
+    umbrella-sampling simulations of water dissociation at the anatase
+    TiO2(101)/water interface. When compared, the distilled students reproduce
+    the target observables of their teachers more reliably than equally compact
+    models trained only on the available reference data. The liquid water
+    student, distilled from a {\ensuremath{\Delta}}-learned CCSD(T)-quality
+    teacher, reproduces thermodynamic, structural, transport, and nuclear
+    quantum effects over the full temperature range studied. At the TiO2/water
+    interface, knowledge distillation makes PIMD umbrella sampling practical
+    and shows that nuclear quantum effects lower the dissociation barrier by
+    approximately 2 kcal/mol and shift the molecular-dissociated free energy
+    difference into closer agreement with recent solid-state 17O NMR
+    measurements. Our work demonstrates how knowledge distillation can make
+    accurate MLIPs practical for the sampling methods needed to connect
+    condensed-phase reaction thermodynamics with experiment, notably for
+    interfacial chemistry and catalysis.
+  },
+}
