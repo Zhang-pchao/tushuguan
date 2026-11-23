@@ -1,0 +1,32 @@
+@article{Kempkes_JChemTheoryComput_2026_v22_p9332,
+  title        = {
+    {Bayesian Umbrella Quadrature Automates Free-Energy Calculations Across
+    Diverse Molecular Systems and Processes}
+  },
+  author       = {Eline K. Kempkes and Alberto {P{\'e}rez de Alba Ort{\'\i}z}},
+  year         = 2026,
+  journal      = {J. Chem. Theory Comput.},
+  volume       = 22,
+  number       = 18,
+  pages        = {9332--9342},
+  doi          = {10.1021/acs.jctc.6c00120},
+  abstract     = {
+    Biased sampling in molecular dynamics simulations overcomes time scale
+    limitations and delivers free-energy landscapes, essential to understand
+    complex atomistic phenomena. However, when applied across diverse systems
+    and processes, biasing protocols often require time- and resource-consuming
+    fine-tuning. In search of robustness, we automate a prominent biasing
+    method, Umbrella Sampling, by leveraging the Umbrella Integration formalism
+    for free-energy calculation. To estimate the value of an integral, i.e.,
+    the free energy, our Bayesian Umbrella Quadrature (BUQ) method iteratively
+    selects gradient samples, i.e., bias locations, that most reduce the
+    posterior integral variance based on a noise-tolerant Gaussian process
+    model, which also effectively interpolates between samples. We validate the
+    method for a conformational change in a small peptide, a water-to-ice phase
+    transition, and a substitution chemical reaction; demonstrating that BUQ
+    provides an automated free-energy calculation framework that is accurate
+    and robust across fundamentally different systems and processes. To ease
+    adoption, we interface BUQ with widespread simulation packages and share
+    hyperparametrization guidelines.
+  },
+}
